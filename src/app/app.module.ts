@@ -15,10 +15,10 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 // Import pages
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+import { ContactsPage } from '../pages/contacts/contacts';
+import { SchedulePage } from '../pages/schedule/schedule';
+import { SettingsPage } from '../pages/settings/settings';
 
 // import Ionic components
 import { StatusBar } from '@ionic-native/status-bar';
@@ -27,7 +27,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    ContactsPage,
+    SchedulePage,
+    SettingsPage
   ],
   imports: [
     BrowserModule,

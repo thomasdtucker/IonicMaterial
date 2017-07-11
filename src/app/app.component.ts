@@ -12,8 +12,22 @@ export class MyApp {
   rootPage:any = HomePage;
 
   public navLinks = [
-    "home",
-    "glossary"
+    {
+      icon: 'sentiment_very_satisfied',
+      route: 'home'
+    },
+    {
+      icon: 'people',
+      route: 'contacts'
+    },
+    {
+      icon: 'schedule',
+      route: 'schedule'
+    },
+    {
+      icon: 'settings',
+      route: 'settings'
+    }
   ]
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {

@@ -1,11 +1,12 @@
 <nav md-tab-nav-bar>
   <a md-tab-link
        *ngFor="let link of navLinks"
-       [routerLink]="link"
+       [routerLink]="link.route"
        routerLinkActive #rla="routerLinkActive"
        [active]="rla.isActive">
-      {{link}}
+       <i class="material-icons">{{link.icon}}</i>
     </a>
 </nav>
-<router-outlet></router-outlet>
-<ion-nav [root]="rootPage"></ion-nav>
+<main>
+  <router-outlet></router-outlet>
+</main>
